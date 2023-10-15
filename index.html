@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MANSI'S PORTFOLIO</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'popins', sans-serif;
+      }
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      nav ul li a:hover{
+        
+        color: rgb(125, 125, 186);
+        font-size: 1.04rem;
+      }
+      main hr{
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .left{
+        font-size: 1.5rem;
+        font-family: "kajiro";
+        font-size: 45px;
+      }
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 120px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection{  
+        font-size: 2.5rem;
+      }
+      .rightsection img  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;  
+      }
+      .purple{
+        color: blueviolet;
+      }
+      .text-gray{
+        color: gray;
+      }
+      #element{
+        color: rgb(160, 160, 244);
+      }
+      .secondsection{
+        max-width: 80vw;
+        margin: auto;
+      }
+      .secondsection h1{
+        font-size: 1.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">MANSI'S  PORTFOLIO</div>
+        <div class="right">
+            <ul>
+            <li> <a href="/"> Home</a></li>
+            <li> <a href="/">About </a></li>
+            <li> <a href="/">Services </a></li>
+            <li> <a href="/">Projects </a></li>
+            <li> <a href="/"> Contact Me</a></li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                    Hi!! My name is <span class="purple">Mansi Dixit.</span>
+                    <div>And I am a passionate</div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <button class="btn">Download Resume </button>
+                        <button class="btn">Visit Github</button>
+                        <button class="btn">Visit Linkedin</button>
+                    </div>
+            </div>
+            <div class="rightsection">
+                <img src="dev.png" alt="">
+            </div>
+        </section>
+<hr>
+        <section class="secondsection">
+          <span class="text-gray">WHAT I HAVE DONE SO FAR</span>
+          <h1>Accomplishments</h1>
+          <p>"Passionate about technology and learning, I'm a coding enthusiast who thrives on challenges. I had the privilege of participating in the NASA Space Apps Hackathon, where I collaborated on innovative solutions. I was shortlisted for Team Samarthya Club, demonstrating my commitment to interdisciplinary projects. With certifications in Python programming, elementary English, and AWS Cloud Practitioner Essentials, I've honed my technical and language skills. I've also completed the 21-Day Coding Ninjas Challenge, solving over 250 problems. My knowledge extends to C and C++, and I'm currently engrossed in web development projects. These experiences have fueled my drive for continuous growth and problem-solving, and I'm excited to share my journey through my work."
+            </p>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+  </body>
+</html>
